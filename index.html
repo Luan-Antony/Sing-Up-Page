@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Quest Formulário com Validação Input</title>
+</head>
+
+<body>
+    <section class="ajuda">
+        <h1>Ficou com duvida? <br> nos mande uma mensagem!</h1>
+
+        <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+        </p>
+    </section>
+
+    <form class="formulario">
+
+        <div>
+            <input type="text" placeholder="Nome completo *" class="campo">
+            <span class="erro">campo obrigatório</span>
+        </div>
+
+        <div>
+            <input type="email" placeholder="Email *" class="campo">
+            <span class="erro">campo obrigatório</span>
+        </div>
+
+        <div>
+            <input type="number" placeholder="Número *" class="campo">
+            <span class="erro">campo obrigatório</span>
+        </div>
+
+        <div>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem *" class="campo mensagem"></textarea>
+            <span class="erro">campo obrigatório</span>
+        </div>
+
+        <p>*campos obrigatórios</p>
+        <button type="submit" class="enviar">Enviar</button>
+
+    </form>
+
+    <script type="text/javascript" src="./src/js/validacao.js"></script>
+
+</body>
+
+</html>
